@@ -1,0 +1,36 @@
+{
+    "description": "my personal portfolio website",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets && npm run minify",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "minify": "node scripts/minify.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/layaxx/personal_website.git"
+    },
+    "keywords": [
+        "website",
+        "portfolio"
+    ],
+    "author": "Yannick Lang",
+    "license": "AGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/layaxx/personal_website/issues"
+    },
+    "homepage": "https://github.com/layaxx/personal_website#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "cwebp-bin": "^6.1.1",
+        "minify": "^5.1.1",
+        "postcss": "^7.0.32",
+        "pug": "^3.0.0",
+        "sass": "^1.26.10",
+        "shelljs": "^0.8.4"
+    }
+}
