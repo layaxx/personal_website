@@ -1,1 +1,2 @@
-# personal_website
+# personal website
+*currently a work in progress*
