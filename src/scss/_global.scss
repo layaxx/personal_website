@@ -1,14 +1,78 @@
 body {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 22px;
-    background-color: black;
-    color: green;
+    color: white;
+    background: rgb(120, 49, 146);
+    background: linear-gradient(114deg, rgba(120, 49, 146, 1) 0%, rgba(89, 188, 200, 1) 100%);
+    background-attachment: fixed;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
 }
 
 h1 {
     text-align: center;
+    font-size: 3rem;
 }
 
 div.list {
-    font-size: 35px;
+    margin: auto;
+    padding: 10px;
+    font-size: 2rem;
+    line-height: 1.75;
+    @media only screen and (min-width: 600px) {
+        width: 50%;
+    }
+    ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        width: 50%;
+        @media only screen and (min-width: 600px) {
+            width: 30%;
+        }
+    }
+    /* unvisited link */
+    a:link {
+        color: gainsboro;
+    }
+    /* visited link */
+    a:visited {
+        color: white;
+    }
+    /* mouse over link */
+    a:hover {
+        color: white;
+    }
+    /* selected link */
+    a:active {
+        color: white;
+    }
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #f69021;
+    color: #fff;
+    text-shadow: none;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
