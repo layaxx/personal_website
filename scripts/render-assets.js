@@ -15,7 +15,7 @@ module.exports = function renderAssets() {
 };
 
 function convertToWebP(dirPath) {
-    if (!path.resolve(dirPath).isDirectory) {
+    if (!path.resolve(dirPath).isDirectory || path.resolve(dirPath).endsWith('favicon')) {
         return;
     }
     console.log('### INFO: converting images in directory ' + dirPath);
