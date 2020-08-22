@@ -1,14 +1,12 @@
 doctype html
 html(lang='de')
-    include include/header.pug
-        title Yannick Lang
-        //- Mailgo  
-        script(defer src="https://cdn.jsdelivr.net/npm/mailgo@0.9.9/dist/mailgo.min.js")
+    include ../include/header.pug
+        title Portfolio - Yannick Lang
 
     body
         .list
             img(src='/assets/img/logo.svg' alt='logo')
-            h1 Yannick Lang
+            h1 Yannick Lang - Portfolio
             ul
                 li
                     a(href='https://github.com/layaxx') GitHub
@@ -19,8 +17,5 @@ html(lang='de')
                 li
                     a(href="#mailgo" data-address="layaxx" data-domain="gmx.de") Mail 
             
-            .buttons
-                a(href='/portfolio/index.html')
-                    button(type='button') PORTFOLIO
-                //- button(href='/blog/index.html') BLOG
-            
+            p(style='text-align:center') 
+                em Diese Seite befindet sich aktuell im Aufbau

@@ -13,6 +13,7 @@ body {
 h1 {
     text-align: center;
     font-size: 3rem;
+    font-family: sans-serif;
 }
 
 div.list {
@@ -20,14 +21,18 @@ div.list {
     padding: 10px;
     font-size: 2rem;
     line-height: 1.75;
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 900px) {
         width: 50%;
     }
     ul {
         text-align: center;
+        padding-inline-start: 0;
+        margin-bottom: 3.5rem;
         li {
             display: inline-block;
-            margin-right: 1rem;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            font-size: 1.5rem;
         }
     }
     img {
@@ -36,8 +41,38 @@ div.list {
         margin-right: auto;
         margin-top: 5rem;
         width: 50%;
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 750px) {
             width: 30%;
+        }
+    }
+    div.buttons {
+        position: relative;
+        button {
+            font-family: "IBM Plex Mono", monospace;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin-top: 1rem;
+            cursor: pointer;
+            padding: 1.25rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-transform: uppercase!important;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            background-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid white;
+            line-height: 1.5;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
     }
     /* unvisited link */
