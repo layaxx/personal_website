@@ -2,10 +2,13 @@ doctype html
 html(lang='de')
     include ../include/header.pug
         title Portfolio - Yannick Lang
+        //- Mailgo  
+        script(defer src="https://cdn.jsdelivr.net/npm/mailgo@0.9.9/dist/mailgo.min.js")
 
     body
         .list
-            img(src='/assets/img/logo.svg' alt='logo')
+            a(href='../index.html' alt='Startseite') 
+                img(src='/assets/img/logo.svg' alt='logo')
             h1 Yannick Lang - Portfolio
             ul
                 li
