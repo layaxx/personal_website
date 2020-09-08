@@ -1,7 +1,7 @@
 doctype html
 html(lang='de')
     include include/header.pug
-        title Yannick Lang
+        title Yannick Lang - Homepage
         //- Mailgo  
         script(defer src="https://cdn.jsdelivr.net/npm/mailgo@0.9.9/dist/mailgo.min.js")
 
@@ -9,6 +9,15 @@ html(lang='de')
         .list
             img(src='/assets/img/logo.svg' alt='logo')
             h1 Yannick Lang
+            h2 Filmmaker. Photographer. Developer.
+            
+            .buttons
+                a(href='/portfolio/index.html')
+                    button(type='button') PORTFOLIO
+                a(href='/about.html')
+                    button(type='button') ABOUT
+
+        footer
             ul
                 li
                     a(href='https://github.com/layaxx') GitHub
@@ -18,9 +27,4 @@ html(lang='de')
                     a(href='https://www.instagram.com/yannicklang_') Instagram
                 li
                     a(href="#mailgo" data-address="layaxx" data-domain="gmx.de") Mail 
-            
-            .buttons
-                a(href='/portfolio/index.html')
-                    button(type='button') PORTFOLIO
-                //- button(href='/blog/index.html') BLOG
         
