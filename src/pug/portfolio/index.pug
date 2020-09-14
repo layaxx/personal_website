@@ -1,24 +1,42 @@
 doctype html
-html(lang='de')
-    include ../include/header.pug
+html(lang='en')
+    include include/header.pug
         title Portfolio - Yannick Lang
         //- Mailgo  
         script(defer src="https://cdn.jsdelivr.net/npm/mailgo@0.9.9/dist/mailgo.min.js")
+        //- FontAwesome
+        script(src="https://kit.fontawesome.com/40b9c85330.js" crossorigin="anonymous")
 
     body
         .list
-            a(href='../index.html' alt='Startseite') 
+            a(href='/index.html')
                 img(src='/assets/img/logo.svg' alt='logo')
-            h1 Yannick Lang - Portfolio
-            ul
-                li
-                    a(href='https://github.com/layaxx') GitHub
-                li
-                    a(href='https://steamcommunity.com/id/layaxx2go/') Steam
-                li
-                    a(href='https://www.instagram.com/yannicklang_') Instagram
-                li
-                    a(href="#mailgo" data-address="layaxx" data-domain="gmx.de") Mail 
+            h1 Yannick Lang
+            h2 Filmmaker. Photographer. Developer.
             
-            p(style='text-align:center') 
-                em Diese Seite befindet sich aktuell im Aufbau
+            p(style='margin:2rem;') This site is currently under construction. Check back later or find out more about me now by following the links below.
+
+        footer
+            .row
+                .column
+                    if new Date().getFullYear() === 2020
+                        p Copyright &copy; Yannick Lang 2020
+                    else 
+                        p!= "Copyright &copy; Yannick Lang 2020-" + new Date().getFullYear()
+                .column
+                    ul
+                        li
+                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.github.com/layaxx' aria-label="GitHub")
+                                i.fab.fa-github-square
+                        li
+                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://steamcommunity.com/id/layaxx2go/' aria-label="Steam")
+                                i.fab.fa-steam-square
+                        li
+                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.instagram.com/yannicklang_' aria-label="Instagram")
+                                i.fab.fa-instagram-square
+                        li
+                            a.btn.btn-dark.btn-social.mx-2.portfolio-linka(href="#mailgo" data-address="layaxx" data-domain="gmx.de" aria-label="Send Mail")
+                                i.fas.fa-envelope-square
+                .column
+                    p   
+                        a(href='/sitemap.html') Sitemap

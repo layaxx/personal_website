@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
     include include/header.pug
-        title Yannick Lang - Homepage
+        title About - Yannick Lang
         //- Mailgo  
         script(defer src="https://cdn.jsdelivr.net/npm/mailgo@0.9.9/dist/mailgo.min.js")
         //- FontAwesome
@@ -9,19 +9,14 @@ html(lang='en')
 
     body
         .list
-            img(src='/assets/img/logo.svg' alt='logo')
+            a(href='/index.html')
+                img(src='/assets/img/logo.svg' alt='logo')
             h1 Yannick Lang
             h2 Filmmaker. Photographer. Developer.
             
-            .buttons
-                a(href='/portfolio/index.html')
-                    button(type='button') PORTFOLIO
-                a(href='/about.html')
-                    button(type='button') ABOUT
+            p(style='margin:2rem;') This site is currently under construction. Check back later or find out more about me now by following the links below.
 
-        footer(style='margin-top:0;')
-            a(title="Unknown author / Public domain" href="https://commons.wikimedia.org/wiki/File:Kmii_logo_de.jpg")
-                img(alt="Kmii logo de" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kmii_logo_de.jpg/253px-Kmii_logo_de.jpg" style='max-width:150px; margin-bottom: 1.5rem;')
+        footer
             .row
                 .column
                     if new Date().getFullYear() === 2020

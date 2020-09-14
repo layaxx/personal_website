@@ -8,6 +8,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -21,27 +22,48 @@ h2 {
     margin-top: 0;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: sans-serif;
 }
 
 footer {
+    @media only screen and (min-width: 800px) {
+        margin-top: 5rem;
+        width: 50%;
+    }
+    display: block;
+    text-align: center;
+    font-size: .9rem;
     margin: auto;
     padding: 10px;
-    font-size: 2rem;
-    line-height: 1.75;
-    @media only screen and (min-width: 900px) {
-        width: 50%;
+    margin-top: 2rem;
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
     }
     ul {
         text-align: center;
         padding-inline-start: 0;
-        margin-bottom: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
         li {
-            display: inline-block;
-            margin-right: 0.5rem;
-            margin-left: 0.5rem;
-            font-size: 1.5rem;
+            display: inline-flex;
         }
     }
     img {
@@ -106,8 +128,8 @@ div.list {
         justify-content: center;
         button {
             font-family: "IBM Plex Mono", monospace;
-            margin: 1rem;
             cursor: pointer;
+            margin: 1rem;
             padding: 1.25rem 2.5rem;
             font-size: 1.125rem;
             font-weight: 700;
@@ -119,7 +141,7 @@ div.list {
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            border: 1px solid white;
+            border: 3px solid white;
             line-height: 1.5;
             transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
