@@ -19,29 +19,4 @@ html(lang='en')
                 a(href='/about.html')
                     button(type='button') ABOUT
 
-        footer(style='margin-top:0;')
-            a(title="Unknown author / Public domain" href="https://commons.wikimedia.org/wiki/File:Kmii_logo_de.jpg")
-                img(alt="Kmii logo de" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kmii_logo_de.jpg/253px-Kmii_logo_de.jpg" style='max-width:150px; margin-bottom: 1.5rem;')
-            .row
-                .column
-                    if new Date().getFullYear() === 2020
-                        p Copyright &copy; Yannick Lang 2020
-                    else 
-                        p!= "Copyright &copy; Yannick Lang 2020-" + new Date().getFullYear()
-                .column
-                    ul
-                        li
-                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.github.com/layaxx' aria-label="GitHub")
-                                i.fab.fa-github-square
-                        li
-                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://steamcommunity.com/id/layaxx2go/' aria-label="Steam")
-                                i.fab.fa-steam-square
-                        li
-                            a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.instagram.com/yannicklang_' aria-label="Instagram")
-                                i.fab.fa-instagram-square
-                        li
-                            a.btn.btn-dark.btn-social.mx-2.portfolio-linka(href="#mailgo" data-address="layaxx" data-domain="gmx.de" aria-label="Send Mail")
-                                i.fas.fa-envelope-square
-                .column
-                    p   
-                        a(href='/sitemap.html') Sitemap
+        include include/footer.pug

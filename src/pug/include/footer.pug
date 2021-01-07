@@ -1,0 +1,24 @@
+footer
+    .row
+        .column
+            if new Date().getFullYear() === 2020
+                p Copyright &copy; Yannick Lang 2020
+            else 
+                p!= "Copyright &copy; Yannick Lang 2020-" + new Date().getFullYear()
+        .column
+            ul
+                li
+                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.github.com/layaxx' aria-label="GitHub")
+                        i.fab.fa-github-square
+                li
+                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://steamcommunity.com/id/layaxx2go/' aria-label="Steam")
+                        i.fab.fa-steam-square
+                li
+                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.instagram.com/yannicklang_' aria-label="Instagram")
+                        i.fab.fa-instagram-square
+                li
+                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href="#mailgo" data-address="layaxx" data-domain="gmx.de" aria-label="Send Mail")
+                        i.fas.fa-envelope-square
+        .column
+            p   
+                a(href='/sitemap.html') Sitemap
