@@ -1,24 +1,17 @@
 footer
-    .row
-        .column
-            if new Date().getFullYear() === 2020
-                p Copyright &copy; Yannick Lang 2020
-            else 
-                p!= "Copyright &copy; Yannick Lang 2020-" + new Date().getFullYear()
-        .column
-            ul
-                li
-                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.github.com/layaxx' aria-label="GitHub")
-                        i.fab.fa-github-square
-                li
-                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://steamcommunity.com/id/layaxx2go/' aria-label="Steam")
-                        i.fab.fa-steam-square
-                li
-                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href='https://www.instagram.com/yannicklang_' aria-label="Instagram")
-                        i.fab.fa-instagram-square
-                li
-                    a.btn.btn-dark.btn-social.mx-2.portfolio-link(href="#mailgo" data-address="layaxx" data-domain="gmx.de" aria-label="Send Mail")
-                        i.fas.fa-envelope-square
-        .column
-            p   
-                a(href='/sitemap.html') Sitemap
+    ul
+        li
+            a.btn(href='https://www.github.com/layaxx' target="_blank" aria-label="GitHub" title="GitHub" rel="noreferrer")
+                img(src="/assets/img/code.svg")
+        li
+            a.btn(href='https://www.instagram.com/yannicklang_' target="_blank" aria-label="Instagram" title="Instagram" rel="noreferrer")
+                img(src="/assets/img/instagram.svg")
+        li
+            a.btn(aria-label="Send Mail" href="mailto:hello@y-lang.eu" target="_blank" title="E-Mail")
+                img(src="/assets/img/mail.svg")
+    .credits Icons erstellt von 
+        a(href="https://www.freepik.com" title="Freepik") Freepik
+        br
+        |  from 
+        a(href="https://www.flaticon.com/de/" title="Flaticon") www.flaticon.com
+        

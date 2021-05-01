@@ -1,184 +1,134 @@
 body {
-    font-family: 'IBM Plex Mono', monospace;
-    color: white;
-    background: rgb(120, 49, 146);
-    background: linear-gradient(114deg, rgba(120, 49, 146, 1) 0%, rgba(89, 188, 200, 1) 100%);
-    background-attachment: fixed;
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    overflow-x: hidden;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  background: rgb(120, 49, 146);
+  background: linear-gradient(
+    114deg,
+    rgba(120, 49, 146, 1) 0%,
+    rgba(89, 188, 200, 1) 100%
+  );
+  background-attachment: fixed;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  overflow-x: hidden;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-bottom: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  margin-bottom: 0;
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: sans-serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
 }
 
 footer {
-    @media only screen and (min-width: 800px) {
-        margin-top: 5rem;
-        width: 50%;
-    }
-    display: block;
+  .credits {
+    margin-top: 1rem;
+  }
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: auto;
+  padding: 10px;
+  margin-top: 4rem;
+
+  ul {
     text-align: center;
-    font-size: .9rem;
-    margin: auto;
-    padding: 10px;
-    margin-top: 2rem;
-    /* Create three equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-        margin-top: 0;
-        margin-bottom: 0;
+    padding-inline-start: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    li {
+      display: inline-flex;
+      margin-inline: 2rem;
+      img {
+        width: 2rem;
+      }
     }
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+  }
+  @media only screen and (max-width: 315px) {
+    ul > li {
+      margin-inline: 0.5rem;
     }
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-    @media screen and (max-width: 600px) {
-        .column {
-            width: 100%;
-        }
-    }
-    ul {
-        text-align: center;
-        padding-inline-start: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        li {
-            display: inline-flex;
-        }
-    }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5rem;
-        width: 50%;
-        @media only screen and (min-width: 750px) {
-            width: 30%;
-        }
-    }
-    /* unvisited link */
-    a:link {
-        color: gainsboro;
-    }
-    /* visited link */
-    a:visited {
-        color: white;
-    }
-    /* mouse over link */
-    a:hover {
-        color: white;
-    }
-    /* selected link */
-    a:active {
-        color: white;
-    }
+  }
+
+  /* unvisited link */
+  a:link {
+    color: gainsboro;
+  }
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  /* selected link */
+  a:active {
+    color: white;
+  }
+}
+
+.btn > img {
+  width: 2rem;
+}
+
+.flexbox {
+  align-items: baseline !important;
+  flex-wrap: wrap;
+  display: inline-flex;
 }
 
 div.list {
-    margin: auto;
-    padding: 10px;
-    font-size: 2rem;
-    line-height: 1.75;
-    @media only screen and (min-width: 900px) {
-        width: 50%;
+  background-color: white;
+  padding: 2rem;
+  color: #333;
+  margin: auto;
+  margin-top: 3rem;
+  font-size: 2rem;
+  line-height: 1.75;
+  @media only screen and (min-width: 900px) {
+    width: 60%;
+  }
+  h2 {
+    color: rgba(120, 49, 146, 1);
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 50%;
+    @media only screen and (min-width: 750px) {
+      width: 30%;
     }
-    ul {
-        text-align: center;
-        padding-inline-start: 0;
-        margin-bottom: 3.5rem;
-        li {
-            display: inline-block;
-            margin-right: 0.5rem;
-            margin-left: 0.5rem;
-            font-size: 1.5rem;
-        }
-    }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5rem;
-        width: 50%;
-        @media only screen and (min-width: 750px) {
-            width: 30%;
-        }
-    }
-    div.buttons {
-        display: flex;
-        justify-content: center;
-        button {
-            font-family: "IBM Plex Mono", monospace;
-            cursor: pointer;
-            margin: 1rem;
-            padding: 1.25rem 2.5rem;
-            font-size: 1.125rem;
-            font-weight: 700;
-            text-transform: uppercase!important;
-            color: #fff;
-            text-align: center;
-            background-color: transparent;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            border: 3px solid white;
-            line-height: 1.5;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        }
-    }
-    /* unvisited link */
-    a:link {
-        color: gainsboro;
-    }
-    /* visited link */
-    a:visited {
-        color: white;
-    }
-    /* mouse over link */
-    a:hover {
-        color: white;
-    }
-    /* selected link */
-    a:active {
-        color: white;
-    }
+  }
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background: #f69021;
-    color: #fff;
-    text-shadow: none;
+  background: #f69021;
+  color: #fff;
+  text-shadow: none;
 }
 
 html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
