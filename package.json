@@ -2,14 +2,14 @@
   "description": "my personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets && npm run minify",
+    "build": "yarn clean && yarn build:pug && yarn build:scss && yarn build:scripts && yarn build:assets && yarn minify",
     "build:assets": "node scripts/build-assets.js",
     "build:pug": "node scripts/build-pug.js",
     "build:scripts": "node scripts/build-scripts.js",
     "build:scss": "node scripts/build-scss.js",
     "clean": "node scripts/clean.js",
     "minify": "node scripts/minify.js",
-    "start": "npm run build && node scripts/start.js"
+    "start": "yarn build && node scripts/start.js"
   },
   "repository": {
     "type": "git",
