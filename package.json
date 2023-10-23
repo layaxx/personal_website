@@ -26,15 +26,15 @@
   },
   "homepage": "https://github.com/layaxx/personal_website#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "browser-sync": "2.26.14",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "2.29.3",
     "concurrently": "6.1.0",
     "cwebp-bin": "^6.1.1",
     "minify": "^5.1.1",
-    "postcss": "^7.0.32",
+    "postcss": "^8.4.31",
     "pug": "^3.0.2",
-    "sass": "^1.26.10",
-    "shelljs": "^0.8.4",
+    "sass": "^1.69.4",
+    "shelljs": "^0.8.5",
     "upath": "2.0.1"
   }
 }
