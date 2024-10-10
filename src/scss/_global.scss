@@ -1,10 +1,16 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
+  --main-color: rgb(120, 49, 146);
   font-family: "IBM Plex Mono", monospace;
   color: white;
-  background: rgb(120, 49, 146);
+  background: var(--main-color);
   background: linear-gradient(
     114deg,
-    rgba(120, 49, 146, 1) 0%,
+    var(--main-color) 0%,
     rgba(89, 188, 200, 1) 100%
   );
   background-attachment: fixed;
@@ -13,6 +19,10 @@ body {
   line-height: 1.5;
   text-align: left;
   overflow-x: hidden;
+
+  a:active{
+    color: var(--main-color);
+  }
 }
 
 h1 {
@@ -117,14 +127,8 @@ div.list {
 }
 
 ::selection {
-  background: #f69021;
+  background: var(--main-color);
   color: #fff;
   text-shadow: none;
 }
 
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
