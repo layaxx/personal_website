@@ -20,7 +20,7 @@ body {
   text-align: left;
   overflow-x: hidden;
 
-  a:active{
+  a:active {
     color: var(--main-color);
   }
 }
@@ -98,17 +98,23 @@ div.list {
   @media only screen and (min-width: 900px) {
     width: 60%;
   }
-  h2 {
-    color: rgba(120, 49, 146, 1);
-  }
-  img {
+  img.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 50%;
     @media only screen and (min-width: 750px) {
       width: 30%;
+    }
+  }
+  div.name {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    img {
+      height: 2rem;
+      margin-right: 0.5rem;
     }
   }
   section {
@@ -131,4 +137,3 @@ div.list {
   color: #fff;
   text-shadow: none;
 }
-
