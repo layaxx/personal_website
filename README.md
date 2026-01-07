@@ -4,4 +4,4 @@
 
 This repository contains the source files for my personal Website, which showcases my projects.
 
-*currently a work in progress*
+## currently a work in progress
