@@ -8,11 +8,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   color: white;
   background: var(--main-color);
-  background: linear-gradient(
-    114deg,
-    var(--main-color) 0%,
-    rgba(89, 188, 200, 1) 100%
-  );
+  background: linear-gradient(114deg, var(--main-color) 0%, rgba(89, 188, 200, 1) 100%);
   background-attachment: fixed;
   margin: 0;
   font-size: 1rem;
@@ -112,12 +108,15 @@ div.list {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    h1 {
+      margin-bottom: 0;
+    }
     img {
       height: 2rem;
       margin-right: 0.5rem;
     }
     @media only screen and (max-width: 750px) {
-      h1{
+      h1 {
         font-size: 2rem;
       }
       img {
@@ -125,7 +124,10 @@ div.list {
         margin-right: 0.5rem;
       }
     }
-   
+  }
+
+  h2{
+    margin-bottom: 1rem;
   }
   section {
     display: flex;
