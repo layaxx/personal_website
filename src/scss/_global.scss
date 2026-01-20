@@ -126,8 +126,12 @@ div.list {
     }
   }
 
-  h2{
+  h2 {
     margin-bottom: 1rem;
+  }
+  h2:not(:first-of-type) {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
   }
   section {
     display: flex;
@@ -135,6 +139,47 @@ div.list {
   }
   section:not(:first-of-type) {
     margin-top: 2rem;
+  }
+
+  section.project#first-project {
+    margin-top: 1rem;
+  }
+
+  section.project {
+    .project-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: normal;
+      }
+      .tags {
+        display: flex;
+        gap: 0.7rem;
+        .tag {
+          font-size: small;
+          font-weight: bold;
+          position: relative;
+        }
+        .tag:not(:last-child)::after {
+          content: "";
+          border-left: 1px solid #ccc;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    p {
+      line-height: normal;
+    }
+
+    .links {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 1rem;
+    }
   }
 }
 
